@@ -40,9 +40,6 @@ pygame.display.set_caption("Pause Screen")
 icon = pygame.image.load('assets/icon.png')
 pygame.display.set_icon(icon)
 
-# Game Over
-over_font = pygame.font.Font('freesansbold.ttf', 64)
-
 # Game Loop
 pauseScreenEnabled = True
 while pauseScreenEnabled:
