@@ -20,9 +20,9 @@ pauseScreen = pygame.display.set_mode((0, 0), pygame.FULLSCREEN, pygame.NOFRAME)
 background = pygame.image.load('assets/background.jpg')
 
 # Rectangles
-rect_button1 = pygame.Rect(710, 390, 498,48)
-rect_button2 = pygame.Rect(710, 490, 498,48)
-rect_button3 = pygame.Rect(710, 590, 498,48)
+rect_button1 = pygame.Rect(710, 390, 498,70)
+rect_button2 = pygame.Rect(710, 490, 498,70)
+rect_button3 = pygame.Rect(710, 590, 498,70)
 color = pygame.Color('lightskyblue3')
 
 
