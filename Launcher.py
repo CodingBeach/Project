@@ -22,6 +22,7 @@ input_login_rect = pygame.Rect(390,200,500,48)
 input_password_rect = pygame.Rect(390,254,500,48)
 button = pygame.image.load('assets/playbutton.png')
 buttonClicked = pygame.image.load('assets/playbutton_clicked.png')
+#xxxxxxxxxxxxxxxxxx
 
 ## Video Represent
 def exitOp(isAudio,videoFlag,audiothread): ## just exiting the threads needed for the video displaying. CALL THIS WHEN EXITING THE CLIP
