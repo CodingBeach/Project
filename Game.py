@@ -42,7 +42,10 @@ launcher_exit_button = pygame.image.load("assets/images/launcher/exit_button.png
 # mixer.music.load("assets/launcherd_screen.mp3")
 # mixer.music.play(-1)
 
-# Game Loop
+# ////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\
+# //////////////////// Launcher Loop \\\\\\\\\\\\\\\\\\\\
+# \\\\\\\\\\\\\\\\\\\\\\\\\\\\///////////////////////////
+
 launcherScreenEnabled = True
 while launcherScreenEnabled:
 
@@ -72,6 +75,55 @@ while launcherScreenEnabled:
 #
 #
 #
+#
+#
+#  /////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\
+# ///////////////////// MAIN MENU \\\\\\\\\\\\\\\\\\\\
+# \\\\\\\\\\\\\\\\\\\\\\\\\\//////////////////////////
+#
+#
+#
+MAINMENU_WINDOW = pygame.display.set_mode((0, 0), pygame.FULLSCREEN, pygame.RESIZABLE)
+
+# //////////////////// Launcher Background
+mainmenu_background = pygame.image.load('assets/images/launcher/bg.png')
+
+
+# //////////////////// Launcher IMAGES for: LOGIN INPUT, PASSWORD INPUT, LOGIN BUTTON, REGISTER BUTTON, EXIT BUTTON
+zmienna = 1
+
+# Sound
+# mixer.music.load("assets/launcherd_screen.mp3")
+# mixer.music.play(-1)
+
+# ////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\
+# /////////////////// Main Menu Loop \\\\\\\\\\\\\\\\\\\
+# \\\\\\\\\\\\\\\\\\\\\\\\\\\\//////////////////////////
+mainmenuEnabled = True
+while mainmenuEnabled:
+
+    # Background Image
+    MAINMENU_WINDOW.blit(mainmenu_background, (0, 0))
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            pygame.quit()
+
+        if event.type == pygame.K_DOWN and event.key == pygame.K_ESCAPE:
+            print("chcesz wylaczyc gre?")
+
+    # draw here
+    print("dzialam")
+    
+    pygame.display.update()
+#
+#
+#
+#
+#
+#
+#
+#
+#
 #  /////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\
 # //////////////////// PAUSE MENU \\\\\\\\\\\\\\\\\\\\
 # \\\\\\\\\\\\\\\\\\\\\\\\\\//////////////////////////
@@ -90,7 +142,7 @@ pause_rect_exit = pygame.Rect(710, 590, 498,70)
 color = pygame.Color('lightskyblue3')
 
 
-# Button1,2,3 images
+# //////////////////////////// BUTTONS defined
 pause_continue = pygame.image.load("assets/images/pause/continue.png")
 pause_options = pygame.image.load("assets/images/pause/options.png")
 pause_exit = pygame.image.load("assets/images/pause/exit.png")
@@ -99,7 +151,9 @@ pause_exit = pygame.image.load("assets/images/pause/exit.png")
 # mixer.music.load("assets/paused_screen.mp3")
 # mixer.music.play(-1)
 
-# Game Loop
+# ////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\
+# /////////////////// Pause Menu Loop \\\\\\\\\\\\\\\\\\
+# \\\\\\\\\\\\\\\\\\\\\\\\\\\\//////////////////////////
 pauseScreenEnabled = True
 while pauseScreenEnabled:
 
