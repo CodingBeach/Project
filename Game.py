@@ -50,10 +50,10 @@ while launcherScreenEnabled:
     LAUNCHER_WINDOW.blit(launcher_background, (0, 0))
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
-            print("Continue Game")
+            pygame.quit()
 
         if event.type == pygame.K_DOWN and event.key == pygame.K_ESCAPE:
-            print("Continue Game")
+            pygame.quit()
 
     # draw here
     pygame.draw.rect(LAUNCHER_WINDOW,color,launcher_rect_login_input,1)
@@ -68,31 +68,6 @@ while launcherScreenEnabled:
     LAUNCHER_WINDOW.blit(launcher_exit_button, (0, 676))
     
     pygame.display.update()
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
 #
 #
 #
