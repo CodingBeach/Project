@@ -27,7 +27,7 @@ launcher_rect_login_input = pygame.Rect(710, 390, 498,70)
 launcher_rect_password_input = pygame.Rect(710, 490, 498,70)
 launcher_rect_login_button = pygame.Rect(710, 590, 498,70)
 launcher_rect_register_button = pygame.Rect(710, 590, 498,70)
-launcher_rect_launcher_exit_button = pygame.Rect(710, 590, 498,70)
+launcher_rect_exit_button = pygame.Rect(710, 590, 498,70)
 color = pygame.Color('lightskyblue3')
 
 
