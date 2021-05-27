@@ -8,8 +8,15 @@ import numpy as np
 
 # PyGame Initialization
 pygame.init()
-
-# //////////////////// LAUNCHER MENU \\\\\\\\\\\\\\\\\\\\
+#
+#
+#
+#  /////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\
+# ///////////////////// LAUNCHER \\\\\\\\\\\\\\\\\\\\\
+# \\\\\\\\\\\\\\\\\\\\\\\\\\//////////////////////////
+#
+#
+#
 LAUNCHER_WINDOW = pygame.display.set_mode((1280, 720), pygame.NOFRAME)
 
 # //////////////////// Launcher Background
@@ -90,8 +97,11 @@ while launcherScreenEnabled:
 #
 #
 #
-#
+#  /////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\
 # //////////////////// PAUSE MENU \\\\\\\\\\\\\\\\\\\\
+# \\\\\\\\\\\\\\\\\\\\\\\\\\//////////////////////////
+#
+#
 PAUSE_WINDOW = pygame.display.set_mode((1280, 720), pygame.NOFRAME)
 
 # Background
