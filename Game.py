@@ -20,14 +20,14 @@ pygame.init()
 LAUNCHER_WINDOW = pygame.display.set_mode((1280, 720), pygame.NOFRAME)
 
 # //////////////////// Launcher Background
-launcher_background = pygame.image.load('assets/images/backgrounds/launcher/background.jpg')
+launcher_background = pygame.image.load('assets/images/launcher/bg.png')
 
-# //////////////////// Launcher Rectangles
-launcher_rect_login_input = pygame.Rect(710, 390, 498,70)
-launcher_rect_password_input = pygame.Rect(710, 490, 498,70)
-launcher_rect_login_button = pygame.Rect(710, 590, 498,70)
-launcher_rect_register_button = pygame.Rect(710, 590, 498,70)
-launcher_rect_exit_button = pygame.Rect(710, 590, 498,70)
+# //////////////////// Lau           Xpozycja  Ypozycja  Xwielkosc Ywielkosc
+launcher_rect_login_input = pygame.Rect(502, 289, 280,36)
+launcher_rect_password_input = pygame.Rect(502, 337, 280,36)
+launcher_rect_login_button = pygame.Rect(748, 387, 32,36)
+launcher_rect_register_button = pygame.Rect(504, 387, 238,36)
+launcher_rect_exit_button = pygame.Rect(2, 678, 1276,40)
 color = pygame.Color('lightskyblue3')
 
 
@@ -56,16 +56,16 @@ while launcherScreenEnabled:
             print("Continue Game")
 
     # draw here
-    pygame.draw.rect(LAUNCHER_WINDOW,color,launcher_rect_login_input,2)
-    pygame.draw.rect(LAUNCHER_WINDOW,color,launcher_rect_password_input,2)
-    pygame.draw.rect(LAUNCHER_WINDOW,color,launcher_rect_login_button,2)
-    pygame.draw.rect(LAUNCHER_WINDOW,color,launcher_rect_register_button,2)
-    pygame.draw.rect(LAUNCHER_WINDOW,color,launcher_rect_exit_button,2)
-    LAUNCHER_WINDOW.blit(launcher_login_input, (710, 390))
-    LAUNCHER_WINDOW.blit(launcher_password_input, (710, 490))
-    LAUNCHER_WINDOW.blit(launcher_login_button, (710, 590))
-    LAUNCHER_WINDOW.blit(launcher_register_button, (710, 590))
-    LAUNCHER_WINDOW.blit(launcher_exit_button, (710, 590))
+    LAUNCHER_WINDOW.blit(launcher_login_input, (500, 287))
+    LAUNCHER_WINDOW.blit(launcher_password_input, (500, 335))
+    LAUNCHER_WINDOW.blit(launcher_login_button, (746, 385))
+    LAUNCHER_WINDOW.blit(launcher_register_button, (502, 385))
+    LAUNCHER_WINDOW.blit(launcher_exit_button, (0, 676))
+    pygame.draw.rect(LAUNCHER_WINDOW,color,launcher_rect_login_input,-1)
+    pygame.draw.rect(LAUNCHER_WINDOW,color,launcher_rect_password_input,-1)
+    pygame.draw.rect(LAUNCHER_WINDOW,color,launcher_rect_login_button,-1)
+    pygame.draw.rect(LAUNCHER_WINDOW,color,launcher_rect_register_button,-1)
+    pygame.draw.rect(LAUNCHER_WINDOW,color,launcher_rect_exit_button,-1)
     
     pygame.display.update()
 #
