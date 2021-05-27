@@ -56,16 +56,16 @@ while launcherScreenEnabled:
             print("Continue Game")
 
     # draw here
+    pygame.draw.rect(LAUNCHER_WINDOW,color,launcher_rect_login_input,1)
+    pygame.draw.rect(LAUNCHER_WINDOW,color,launcher_rect_password_input,1)
+    pygame.draw.rect(LAUNCHER_WINDOW,color,launcher_rect_login_button,1)
+    pygame.draw.rect(LAUNCHER_WINDOW,color,launcher_rect_register_button,1)
+    pygame.draw.rect(LAUNCHER_WINDOW,color,launcher_rect_exit_button,1)
     LAUNCHER_WINDOW.blit(launcher_login_input, (500, 287))
     LAUNCHER_WINDOW.blit(launcher_password_input, (500, 335))
     LAUNCHER_WINDOW.blit(launcher_login_button, (746, 385))
     LAUNCHER_WINDOW.blit(launcher_register_button, (502, 385))
     LAUNCHER_WINDOW.blit(launcher_exit_button, (0, 676))
-    pygame.draw.rect(LAUNCHER_WINDOW,color,launcher_rect_login_input,-1)
-    pygame.draw.rect(LAUNCHER_WINDOW,color,launcher_rect_password_input,-1)
-    pygame.draw.rect(LAUNCHER_WINDOW,color,launcher_rect_login_button,-1)
-    pygame.draw.rect(LAUNCHER_WINDOW,color,launcher_rect_register_button,-1)
-    pygame.draw.rect(LAUNCHER_WINDOW,color,launcher_rect_exit_button,-1)
     
     pygame.display.update()
 #
