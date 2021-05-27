@@ -17,7 +17,7 @@ pygame.init()
 pauseScreen = pygame.display.set_mode((0, 0), pygame.FULLSCREEN, pygame.NOFRAME)
 
 # Background
-background = pygame.image.load('assets/background.jpg')
+background = pygame.image.load('assets/images/backgrounds/background.jpg')
 
 # Rectangles
 rect_button1 = pygame.Rect(710, 390, 498,70)
@@ -27,9 +27,9 @@ color = pygame.Color('lightskyblue3')
 
 
 # Button1,2,3 images
-button1 = pygame.image.load("assets/continue_button.png")
-button2 = pygame.image.load("assets/options_button.png")
-button3 = pygame.image.load("assets/exit_to_menu_button.png")
+button1 = pygame.image.load("assets/images/pause/continue.png")
+button2 = pygame.image.load("assets/images/pause/options.png")
+button3 = pygame.image.load("assets/images/pause/exit.png")
 
 # Sound
 # mixer.music.load("assets/paused_screen.mp3")
@@ -37,7 +37,7 @@ button3 = pygame.image.load("assets/exit_to_menu_button.png")
 
 # Caption and Icon
 pygame.display.set_caption("Pause Screen")
-icon = pygame.image.load('assets/icon.png')
+icon = pygame.image.load('assets/images/icons/icon.png')
 pygame.display.set_icon(icon)
 
 # Game Loop
