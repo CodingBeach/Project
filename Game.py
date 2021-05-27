@@ -102,6 +102,7 @@ while launcherScreenEnabled:
 # \\\\\\\\\\\\\\\\\\\\\\\\\\//////////////////////////
 #
 #
+#
 PAUSE_WINDOW = pygame.display.set_mode((1280, 720), pygame.NOFRAME)
 
 # Background
