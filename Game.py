@@ -55,6 +55,7 @@ launcher_exit_button = pygame.image.load("assets/images/launcher/exit_button.png
 # ////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\
 # //////////////////// Launcher Loop \\\\\\\\\\\\\\\\\\\\
 # \\\\\\\\\\\\\\\\\\\\\\\\\\\\///////////////////////////
+
 LoginInputActive = False # ///// login input
 PasswordInputActive = False # ///// password input
 launcherScreenEnabled = True
@@ -83,6 +84,9 @@ while launcherScreenEnabled:
 
         if event.type == pygame.KEYDOWN:
             if LoginInputActive == True:
+                if len(login_text) > 16:
+                    loginInputActive = False
+                    login_text = login_text[0:-48]
                 if event.key == pygame.K_BACKSPACE:
                     login_text = login_text[0:-1]
                 else:
@@ -90,6 +94,9 @@ while launcherScreenEnabled:
 
         if event.type == pygame.KEYDOWN:
             if PasswordInputActive == True:
+                if len(password_text) > 16:
+                    PasswordInputActive = False
+                    password_text = password_text[0:-48]
                 if event.key == pygame.K_BACKSPACE:
                     password_text = password_text[0:-1]
                 else:
